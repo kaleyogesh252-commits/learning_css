@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 50px;
+            gap: 30px;
+            justify-content: center;
+            border-radius: 10px;
+            
+        }
+        .box{
+            display: flex;
+            background-color: blueviolet;
+            height: 200px;
+            width: 200px;
+            align-items: center;
+            justify-content: center;
+            color:white;
+            font-size: 30px;
+            transform:transform 5s ease-in;
+            
+        }
+        .box1:hover{
+            transform: translate(125px,125px);
+        }
+        .box2:hover{
+            transform:translateX(125px,125px);
+        }
+        .box3:hover{
+            transform: translateY(225px);
+        }
+        .box4:hover{
+            transform: rotate(-180deg);
+        }
+        .box5:hover{
+            transform: skew(100deg);
+        }
+        .box6:hover{
+            transform: scale(5);
+        }
+        .box7:hover{
+            transform:rotate(360deg) scale(4) translate(200px);
+        }
+    </style>
+</head>
+<body>
+    <!-- div.container>div.box*6 -->
+      <div class="container">
+        <div class="box box1">translate</div>
+        <div class="box box2">translatex</div>
+        <div class="box box3 ">Translatey</div>
+        <div class="box box4">Rotate</div>
+        <div class="box box5">Skew</div>
+        <div class="box box6">Scale</div>
+        <div class="box box7"> Multiple</div>
+      </div>
+
+</body>
+</html>
