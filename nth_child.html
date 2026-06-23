@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>nth child</title>
+        <style>
+        ul{
+            width: 200px;
+            padding: 20px;
+            list-style: none;
+
+        }
+        li{
+            padding: 8px;
+            border:5px solid red;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            background-color: yellow;
+        }
+        li:nth-child(odd){
+            background-color: rgb(171, 37, 146);
+            color:white;
+        }
+        li:nth-child(even){
+            background-color: pink;
+        }
+        li:first-child{
+            background-color: black;
+            color:wheat;
+        }
+        li:last-child{
+            background-color: black;
+            color:wheat;
+        }
+        
+    </style>
+    </head>
+    <body>
+        <!-- ul>li*8{item $} short form -->
+        <h1>nth child concept</h1>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+            <li>item 5</li>
+            <li>item 6</li>
+            <li>item 7</li>
+            <li>item 8</li>
+        </ul>
+    </body>
+</html>
