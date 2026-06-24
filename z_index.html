@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>Document</title>
+        <style>
+            .container{
+                position:relative;
+                margin: 100px;
+            }
+            div{
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                text-align: center;
+                font-size:25px;
+            }
+            .blue{
+                background-color:orangered;
+                left: 40px;
+                z-index:5;
+            }
+            .red{
+                background-color:pink;
+                left: 100px;
+                z-index:10;
+              
+            }
+            .green{
+                background-color: green;
+                left:180px;
+                z-index:7;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="blue">blue</div>
+            <div class="red">red</div>
+            <div class="green">green</div>
+        </div>
+    </body>
+</html>
